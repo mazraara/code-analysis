@@ -1,7 +1,7 @@
 # code-analysis
 Playing with php code analysis tools
 
-Tested commands
+*Tested commands*
 
 composer require --dev squizlabs/php_codesniffer
 
@@ -13,7 +13,7 @@ vendor/bin/phpstan analyse ./app
 
 php artisan code:analyse
 
-Shortcut commands
+*Shortcut commands*
 
 composer phpcs
 
