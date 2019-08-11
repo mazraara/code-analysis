@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d7d6f276ec059f9145018e2e7bdd9904",
+    "content-hash": "ff9f138d729dc6045f69b43ec6034071",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -761,6 +761,48 @@
                 "storage"
             ],
             "time": "2019-06-18T20:09:29+00:00"
+        },
+        {
+            "name": "mazraara/random-password",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mazraara/random-password.git",
+                "reference": "a557edcfb88e4c94493698c64b92035cb38a64ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mazraara/random-password/zipball/a557edcfb88e4c94493698c64b92035cb38a64ba",
+                "reference": "a557edcfb88e4c94493698c64b92035cb38a64ba",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RandomPassword\\": "src/RandomPassword/"
+                },
+                "files": [
+                    "src/RandomPassword/Password.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Azraar Azward",
+                    "email": "mazraara@gmail.com"
+                }
+            ],
+            "description": "Generate random password of a given length",
+            "time": "2019-08-11T02:30:31+00:00"
         },
         {
             "name": "monolog/monolog",
