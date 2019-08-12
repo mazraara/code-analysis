@@ -4,6 +4,8 @@ namespace Tests\Feature;
 
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\WithFaker;
 
 class ExampleTest extends TestCase
 {
@@ -14,8 +16,10 @@ class ExampleTest extends TestCase
      */
     public function testBasicTest()
     {
-        $response = $this->get('/');
+        $user = factory(User::class)->create();
 
-        $response->assertStatus(200);
+        $response = $this->actingAs($user)->get(route('home'));
+
+        $response->assertStatus(200)->assertViewIs('home')->assertSee('You are logged in!');
     }
 }
